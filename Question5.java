@@ -26,20 +26,16 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-        Scanner in = new Scanner(System.in);
+           Scanner in = new Scanner(System.in);
 
         // Prompt the user for the number of integers
-       // System.out.println("Enter the number of integers:");
         int count = in.nextInt();
 
-        int[] numbers = new int[count]; // Array to store the integers
         int[] frequencies = new int[101]; // Array to store frequencies of each number (0 to 100)
 
         // Prompt the user for each integer and store it in the array
         for (int i = 0; i < count; i++) {
-            System.out.println("Enter integer " + (i + 1) + ":");
             int num = in.nextInt();
-            numbers[i] = num;
             frequencies[num]++; // Increment the frequency count for the entered number
         }
 
@@ -55,10 +51,9 @@ public class Question5
         }
 
         // Print the mode
-        System.out.println( mode);
+        System.out.println(mode);
 
         // Close the Scanner object
         in.close();
     }
 }
- 
