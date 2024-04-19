@@ -55,7 +55,7 @@ public class Question5
         }
 
         // Print the mode
-        System.out.println("Mode: " + mode);
+        System.out.println( mode);
 
         // Close the Scanner object
         in.close();
