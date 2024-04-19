@@ -10,7 +10,22 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    Scanner in = new Scanner(System.in);
+     Scanner in = new Scanner(System.in);
+        
+        // Prompt the user to enter an integer
+       // System.out.println("Enter an integer:");
+
+        // Read the integer entered by the user
+        int num = in.nextInt();
+
+        // Calculate the square of the integer
+        int result = num * num;
+
+        // Print out the result
+        System.out.println( result);
+
+        // Close the Scanner object
+        in.close();
     
   }
 }

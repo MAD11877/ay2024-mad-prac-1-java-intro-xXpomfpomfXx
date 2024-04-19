@@ -17,7 +17,23 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-    Scanner in = new Scanner(System.in);
-    
-  }
+        Scanner in = new Scanner(System.in);
+        
+        // Prompt the user to enter the number of lines for the triangle
+        // System.out.println("Enter the number of lines for the triangle:");
+        int lines = in.nextInt();
+
+        // Nested loops to print the right angle triangle
+        for (int i = 0; i < lines; i++) {
+            for (int j = 0; j < lines - i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(); // Move to the next line after printing each line of asterisks
+        }
+
+        // Close the Scanner object
+        in.close();
+    }
 }
+
+

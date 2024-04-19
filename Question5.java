@@ -26,7 +26,34 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-    Scanner in = new Scanner(System.in);
-    
-  }
+           Scanner in = new Scanner(System.in);
+
+        // Prompt the user for the number of integers
+        int count = in.nextInt();
+
+        int[] frequencies = new int[101]; // Array to store frequencies of each number (0 to 100)
+
+        // Prompt the user for each integer and store it in the array
+        for (int i = 0; i < count; i++) {
+            int num = in.nextInt();
+            frequencies[num]++; // Increment the frequency count for the entered number
+        }
+
+        // Find the mode (number with the highest frequency)
+        int mode = -1; // Default mode
+        int maxFrequency = 0;
+
+        for (int i = 0; i < frequencies.length; i++) {
+            if (frequencies[i] > maxFrequency) {
+                mode = i;
+                maxFrequency = frequencies[i];
+            }
+        }
+
+        // Print the mode
+        System.out.println(mode);
+
+        // Close the Scanner object
+        in.close();
+    }
 }
