@@ -19,8 +19,8 @@ public class Question4
      
         Scanner in = new Scanner(System.in);
         
-        // Prompt the user to enter an integer
-        //System.out.println("Enter the number of lines for the triangle:");
+        // Prompt the user to enter the number of lines for the triangle
+        // System.out.println("Enter the number of lines for the triangle:");
         int lines = in.nextInt();
 
         // Nested loops to print the right angle triangle
@@ -34,5 +34,6 @@ public class Question4
         // Close the Scanner object
         in.close();
     }
+}
 
 }
