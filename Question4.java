@@ -17,7 +17,6 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-<<<<<<< HEAD
         Scanner in = new Scanner(System.in);
         
         // Prompt the user to enter an integer
